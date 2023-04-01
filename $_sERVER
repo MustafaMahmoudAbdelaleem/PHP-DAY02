@@ -1,0 +1,22 @@
+<?php
+//hw1.php 
+//Write a PHP Program to display all the $_SERVER elements
+
+$came_from = htmlentities($_SERVER['HTTP_REFERER']);
+echo "$_SERVER";
+?>
+
+Also this method can do same mission ,
+string='[ ';
+foreach($_SERVER as $key=>$val)
+{
+
+
+$string.=$key.'=>'.$val.",<br>";
+
+}
+
+$string.=']';
+
+
+echo $string;
