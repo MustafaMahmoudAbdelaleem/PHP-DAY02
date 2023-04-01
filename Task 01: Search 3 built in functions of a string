@@ -19,7 +19,7 @@ echo str_word_count("Hello ITI!"); // outputs 2
 
 strrev() - Reverse a String
 The PHP strrev() function reverses a string.
-example:
+// example:
 
 Reverse the string "Hi ITI!":
 
@@ -29,9 +29,23 @@ echo strrev("Hello world!"); // outputs !ITI Hi
 
 strpos() - Search For a Text Within a String
 The PHP strpos() function searches for a specific text within a string. If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE.
-example
+// example
 Search for the text "world" in the string "Hello ITI!":
 
 <?php
 echo strpos("Hello ITI!", "ITI"); // outputs  "number of times ITI has been mentioned"
+?>
+
+  trim() Function  --> Remove characters from both sides of a string ("He" in "Hello" and  "d!" in "Ahmed"):
+
+// example:
+
+    $str = "Hello Ahmed!";
+    echo trim($str,"Hello!")."<br />";
+
+//  str_split() Function  --> The str_split() function splits a string into an array.
+
+// example:    
+print_r(str_split($str));
+echo("<br />");
 ?>
