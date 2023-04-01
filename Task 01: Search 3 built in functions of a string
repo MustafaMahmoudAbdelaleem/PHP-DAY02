@@ -1,0 +1,37 @@
+// Task 01 : search 3 built in functions of a string...?
+
+strlen() - Return the Length of a String
+The PHP strlen() function returns the length of a string.
+example: 
+Return the length of the string "Hello ITI!":
+
+<?php
+echo strlen("Hello ITI!"); // outputs 10
+?>
+
+str_word_count() - Count Words in a String
+The PHP str_word_count() function counts the number of words in a string.
+example:
+
+<?php
+echo str_word_count("Hello ITI!"); // outputs 2
+?>
+
+strrev() - Reverse a String
+The PHP strrev() function reverses a string.
+example:
+
+Reverse the string "Hi ITI!":
+
+<?php
+echo strrev("Hello world!"); // outputs !ITI Hi
+?>
+
+strpos() - Search For a Text Within a String
+The PHP strpos() function searches for a specific text within a string. If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE.
+example
+Search for the text "world" in the string "Hello ITI!":
+
+<?php
+echo strpos("Hello ITI!", "ITI"); // outputs  "number of times ITI has been mentioned"
+?>
