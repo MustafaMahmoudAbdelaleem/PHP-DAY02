@@ -1,0 +1,7 @@
+nl2br — Inserts HTML line breaks before all newlines in a string
+
+Description :
+nl2br(string $string, bool $use_xhtml = true): string
+Returns string with <br /> or <br> inserted before all newlines (\r\n, \n\r, \n and \r).
+
+Source : stack overflow
