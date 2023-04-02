@@ -1,6 +1,6 @@
 <?php
-//hw1.php 
-//Write a PHP Program to display all the $_SERVER elements
+
+//  PHP Program to display $_SERVER in a readable format
 
 $came_from = htmlentities($_SERVER['HTTP_REFERER']);
 echo "$_SERVER";
@@ -20,3 +20,9 @@ $string.=']';
 
 
 echo $string;
+
+//or acn also be
+
+foreach($_SERVER as $key => $value) {
+    echo($key.":".$value."<br />");
+}
