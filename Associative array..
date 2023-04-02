@@ -1,0 +1,25 @@
+<?
+
+$arr = array("Sara"=>31,"John"=>41,"Walaa"=>39,"Ramy"=>40);
+echo "ascending order sort by value"."<br />";
+asort($arr);
+foreach($arr as $key => $value) {
+    
+    echo $key.":".$value."<br />";
+}
+echo "ascending order sort by Key"."<br />";
+ksort($arr);
+foreach($arr as $key => $value) {
+    echo $key.":".$value."<br />";
+}
+echo "descending order sorting by Value"."<br />";
+arsort($arr);
+foreach($arr as $key => $value) {
+    echo $key.":".$value."<br />";
+}
+echo "descending order sorting by Key"."<br />";
+krsort($arr);
+foreach($arr as $key => $value) {
+    echo $key.":".$value."<br />";
+}
+?>
