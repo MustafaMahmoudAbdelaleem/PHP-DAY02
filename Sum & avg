@@ -1,0 +1,13 @@
+// sum and avg of an indexed array and sort in reverse order
+<?php
+
+$nums = array(12,45,10,25);
+$sum = array_sum($nums);
+echo $sum."<br />";
+$avg = $sum /count($nums);
+echo $avg."<br /> ***** <br />";
+rsort($nums);
+foreach($nums as $num) {
+    echo $num."<br />";
+}
+?>
